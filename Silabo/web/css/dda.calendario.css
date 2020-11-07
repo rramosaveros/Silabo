@@ -1,0 +1,49 @@
+
+.card-block {
+    padding: 0.25rem;
+}
+
+
+.holiday {
+    background-color: #ffff78 !important;
+}
+
+.today {
+    background-color: #cfdff7 !important;
+}
+
+.partial-end {
+    background-color: #fedd8e !important;
+}
+
+.dayofmonth {
+    width: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    float: left;
+    text-align: right;
+}
+
+.dayofweek {
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.shortdate {
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.calendarioRow {
+    height: 5rem;    
+}
+
+.calendarioSemana, .calendarioHorario {
+    display: flex;
+    vertical-align: middle;
+}
+
+.calendarioHorarioTexto {
+    margin: auto;
+}

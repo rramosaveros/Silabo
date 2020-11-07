@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://locales.ServiciosWeb.pa/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://locales.ServiciosWeb.pa/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://172.17.102.143:80/WSUnidos/wsUnidosEspoch?xsd=2"/>
+
+<xs:element name="AsignaturasCarrera" type="tns:AsignaturasCarrera"/>
+
+<xs:element name="AsignaturasCarreraResponse" type="tns:AsignaturasCarreraResponse"/>
+
+<xs:element name="CamposFormacionCarrera" type="tns:CamposFormacionCarrera"/>
+
+<xs:element name="CamposFormacionCarreraResponse" type="tns:CamposFormacionCarreraResponse"/>
+
+<xs:element name="Carreras" type="tns:Carreras"/>
+
+<xs:element name="CarrerasResponse" type="tns:CarrerasResponse"/>
+
+<xs:element name="DocentesCarrera" type="tns:DocentesCarrera"/>
+
+<xs:element name="DocentesCarreraResponse" type="tns:DocentesCarreraResponse"/>
+
+<xs:element name="DocentesEscuela" type="tns:DocentesEscuela"/>
+
+<xs:element name="DocentesEscuelaResponse" type="tns:DocentesEscuelaResponse"/>
+
+<xs:element name="DocentesFacultad" type="tns:DocentesFacultad"/>
+
+<xs:element name="DocentesFacultadResponse" type="tns:DocentesFacultadResponse"/>
+
+<xs:element name="Escuelas" type="tns:Escuelas"/>
+
+<xs:element name="EscuelasResponse" type="tns:EscuelasResponse"/>
+
+<xs:element name="Facultades" type="tns:Facultades"/>
+
+<xs:element name="FacultadesResponse" type="tns:FacultadesResponse"/>
+
+<xs:element name="PensumValido" type="tns:PensumValido"/>
+
+<xs:element name="PensumValidoResponse" type="tns:PensumValidoResponse"/>
+
+<xs:element name="PeriodoValido" type="tns:PeriodoValido"/>
+
+<xs:element name="PeriodoValidoResponse" type="tns:PeriodoValidoResponse"/>
+
+<xs:element name="UnidadesAcademicasCargar" type="tns:UnidadesAcademicasCargar"/>
+
+<xs:element name="UnidadesAcademicasCargarResponse" type="tns:UnidadesAcademicasCargarResponse"/>
+
+<xs:element name="arbolCarrera" type="tns:arbolCarrera"/>
+
+<xs:element name="arbolCarreraResponse" type="tns:arbolCarreraResponse"/>
+
+<xs:element name="arbolEscuela" type="tns:arbolEscuela"/>
+
+<xs:element name="arbolEscuelaResponse" type="tns:arbolEscuelaResponse"/>
+
+<xs:element name="arbolFacultad" type="tns:arbolFacultad"/>
+
+<xs:element name="arbolFacultadResponse" type="tns:arbolFacultadResponse"/>
+
+<xs:element name="getUnidadesAsignaturas" type="tns:getUnidadesAsignaturas"/>
+
+<xs:element name="getUnidadesAsignaturasResponse" type="tns:getUnidadesAsignaturasResponse"/>
+
+<xs:element name="redisFlushAll" type="tns:redisFlushAll"/>
+
+<xs:element name="redisFlushAllResponse" type="tns:redisFlushAllResponse"/>
+
+<xs:complexType name="Facultades">
+<xs:sequence>
+<xs:element name="jsonEntidad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FacultadesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolEscuela">
+<xs:sequence>
+<xs:element name="jsonEscuela" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolEscuelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AsignaturasCarrera">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AsignaturasCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CamposFormacionCarrera">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CamposFormacionCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PensumValido">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PensumValidoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateria_Pensum" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolFacultad">
+<xs:sequence>
+<xs:element name="jsonFacultad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolFacultadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesEscuela">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesEscuelaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolCarrera">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbolCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redisFlushAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="redisFlushAllResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PeriodoValido">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="PeriodoValidoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Periodo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesCarrera">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadesAcademicasCargar">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="UnidadesAcademicasCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesFacultad">
+<xs:sequence>
+<xs:element name="jsonCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocentesFacultadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Escuelas">
+<xs:sequence>
+<xs:element name="jsonEntidad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscuelasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Carreras">
+<xs:sequence>
+<xs:element name="jsonEntidad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CarrerasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUnidadesAsignaturas">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUnidadesAsignaturasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

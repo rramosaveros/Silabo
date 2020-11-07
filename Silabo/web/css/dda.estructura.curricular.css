@@ -1,0 +1,69 @@
+.dda-100 {
+    width: 100% !important;
+}
+
+.dda-ec {
+    width: 100%;
+    height: 100%;
+}
+
+.dda-ec-fila {
+    border-top: 1px solid rgb(204,204,204);
+    border-bottom: 1px solid rgb(204,204,204);
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dda-ec-fila >th{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.dda-ec-cf-par {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+th.dda-ec-cf-par {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dda-ec-cf-impar {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+th.dda-ec-cf-impar {
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.dda-ec-elemento-border {
+    border: 1px solid rgb(204,204,204);
+}
+
+.dda-ec-elemento {
+    color: #1e4682;
+    font-size: 0.7rem;
+
+    padding: 0px 4px;
+    margin: 0px;
+
+    width: 20%;
+}
+
+.dda-ec-asignatura {
+    font-weight: 600;
+    
+    padding: 4px;
+    margin: -1px;
+
+    border-top: 1px solid rgb(204,204,204);
+    border-bottom: 1px solid rgb(204,204,204);
+}
+
+.dda-ec-asignatura:hover {
+    cursor: pointer;
+    color: #1e4682;
+    
+    border: 1px solid rgb(204,204,204);
+    border-radius: 5px;
+}

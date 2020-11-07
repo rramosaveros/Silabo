@@ -1,0 +1,113 @@
+select.dda-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearancce: none;
+
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 8px 10px;
+    background-image: url("data:image/svg+xml,\
+        <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='14px'\
+        height='14px' viewBox='0 0 1200 1000' fill='rgb(255, 255, 255)'>\
+        <path d='M1100 411l-198 -199l-353 353l-353 -353l-197 199l551 551z'/>\
+        </svg>");
+    border: 0px !important;
+    border-radius: 0px !important;
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+select.dda-select:focus {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearancce: none;
+
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 8px 10px;
+    background-image: url("data:image/svg+xml,\
+        <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='14px'\
+        height='14px' viewBox='0 0 1200 1000' fill='rgb(255, 255, 255)'>\
+        <path d='M1100 411l-198 -199l-353 353l-353 -353l-197 199l551 551z'/>\
+        </svg>");
+    border: 0px solid transparent !important;
+    border-radius: 0px !important;
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+.btn.dropdown-toggle.btn-default {
+    border: 0px;
+    border-radius: 0px !important;
+    height: 29px;
+
+    padding-bottom: 6px;
+    padding-top: 6px;
+
+    font-size: 14px;
+
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+    color: #ffffff !important;
+    background-color: #00417f !important;
+
+    border-radius: 0px;
+    border: 1px solid #428bca;
+}
+
+div.dropdown-menu{
+    background-color: #00417f !important;
+}
+ul.inner{
+    background-color: #00417f !important;
+}
+ul#contenidoRoles{
+    background-color: #428bca; 
+}
+li.no-results {
+    background-color: #ffffff !important;    
+}
+
+span.text {
+    color: #FFFFFF !important;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret:before {
+    /*content: "\e003";*/
+}
+
+select.custom-select:focus {
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+select.custom-select option:not(:checked){
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+
+select.custom-select:focus {
+    color: #ffffff;
+    background-color: #00417f;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+    background-color: #428bca;    
+}
+
+*:focus {
+    outline: none !important;
+}
+
+span.fa {
+    color: #fefefe;
+    padding-left: 3px;
+}
+
+.bs-caret {
+    background-color: red !important;
+}

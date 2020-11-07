@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://misServiciosInfoCarrera/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://misServiciosInfoCarrera/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://localhost:8080/wsEspochInfoCarrera/wsInfoCarrera?xsd=2"/>
+
+<xs:element name="getActaGradoEstudiante" type="tns:getActaGradoEstudiante"/>
+
+<xs:element name="getActaGradoEstudianteResponse" type="tns:getActaGradoEstudianteResponse"/>
+
+<xs:element name="getAlumnosMateria" type="tns:getAlumnosMateria"/>
+
+<xs:element name="getAlumnosMateriaResponse" type="tns:getAlumnosMateriaResponse"/>
+
+<xs:element name="getConvalidaciones" type="tns:getConvalidaciones"/>
+
+<xs:element name="getConvalidacionesResponse" type="tns:getConvalidacionesResponse"/>
+
+<xs:element name="getCreditosAprobadosCS" type="tns:getCreditosAprobadosCS"/>
+
+<xs:element name="getCreditosAprobadosCSResponse" type="tns:getCreditosAprobadosCSResponse"/>
+
+<xs:element name="getDatosCompletosEstudiante" type="tns:getDatosCompletosEstudiante"/>
+
+<xs:element name="getDatosCompletosEstudianteResponse" type="tns:getDatosCompletosEstudianteResponse"/>
+
+<xs:element name="getDatosDocente" type="tns:getDatosDocente"/>
+
+<xs:element name="getDatosDocenteResponse" type="tns:getDatosDocenteResponse"/>
+
+<xs:element name="getDatosEstudianteMatriculado" type="tns:getDatosEstudianteMatriculado"/>
+
+<xs:element name="getDatosEstudianteMatriculadoResponse" type="tns:getDatosEstudianteMatriculadoResponse"/>
+
+<xs:element name="getDatosInscInstSexo" type="tns:getDatosInscInstSexo"/>
+
+<xs:element name="getDatosInscInstSexoResponse" type="tns:getDatosInscInstSexoResponse"/>
+
+<xs:element name="getDatosMateria" type="tns:getDatosMateria"/>
+
+<xs:element name="getDatosMateriaResponse" type="tns:getDatosMateriaResponse"/>
+
+<xs:element name="getDatosMatricula" type="tns:getDatosMatricula"/>
+
+<xs:element name="getDatosMatriculaResponse" type="tns:getDatosMatriculaResponse"/>
+
+<xs:element name="getDatosUsuarioCarrera" type="tns:getDatosUsuarioCarrera"/>
+
+<xs:element name="getDatosUsuarioCarreraResponse" type="tns:getDatosUsuarioCarreraResponse"/>
+
+<xs:element name="getDictadosMateria" type="tns:getDictadosMateria"/>
+
+<xs:element name="getDictadosMateriaResponse" type="tns:getDictadosMateriaResponse"/>
+
+<xs:element name="getEstadoEstudianteCarrera" type="tns:getEstadoEstudianteCarrera"/>
+
+<xs:element name="getEstadoEstudianteCarreraResponse" type="tns:getEstadoEstudianteCarreraResponse"/>
+
+<xs:element name="getEvaluacionesEscritasGrado" type="tns:getEvaluacionesEscritasGrado"/>
+
+<xs:element name="getEvaluacionesEscritasGradoResponse" type="tns:getEvaluacionesEscritasGradoResponse"/>
+
+<xs:element name="getEvaluacionesOralGrado" type="tns:getEvaluacionesOralGrado"/>
+
+<xs:element name="getEvaluacionesOralGradoResponse" type="tns:getEvaluacionesOralGradoResponse"/>
+
+<xs:element name="getGradosEstudiante" type="tns:getGradosEstudiante"/>
+
+<xs:element name="getGradosEstudianteResponse" type="tns:getGradosEstudianteResponse"/>
+
+<xs:element name="getHorarioDocente" type="tns:getHorarioDocente"/>
+
+<xs:element name="getHorarioDocenteResponse" type="tns:getHorarioDocenteResponse"/>
+
+<xs:element name="getHorarioEstudiante" type="tns:getHorarioEstudiante"/>
+
+<xs:element name="getHorarioEstudianteResponse" type="tns:getHorarioEstudianteResponse"/>
+
+<xs:element name="getHorarioExamenesEstudiante" type="tns:getHorarioExamenesEstudiante"/>
+
+<xs:element name="getHorarioExamenesEstudianteResponse" type="tns:getHorarioExamenesEstudianteResponse"/>
+
+<xs:element name="getHorariosDocente" type="tns:getHorariosDocente"/>
+
+<xs:element name="getHorariosDocenteParalelo" type="tns:getHorariosDocenteParalelo"/>
+
+<xs:element name="getHorariosDocenteParaleloResponse" type="tns:getHorariosDocenteParaleloResponse"/>
+
+<xs:element name="getHorariosDocenteResponse" type="tns:getHorariosDocenteResponse"/>
+
+<xs:element name="getInfoGeneralGradoEstudiante" type="tns:getInfoGeneralGradoEstudiante"/>
+
+<xs:element name="getInfoGeneralGradoEstudianteResponse" type="tns:getInfoGeneralGradoEstudianteResponse"/>
+
+<xs:element name="getInscripcionGratuidad" type="tns:getInscripcionGratuidad"/>
+
+<xs:element name="getInscripcionGratuidadResponse" type="tns:getInscripcionGratuidadResponse"/>
+
+<xs:element name="getInscripcionesEstudiante" type="tns:getInscripcionesEstudiante"/>
+
+<xs:element name="getInscripcionesEstudianteNoActivados" type="tns:getInscripcionesEstudianteNoActivados"/>
+
+<xs:element name="getInscripcionesEstudianteNoActivadosResponse" type="tns:getInscripcionesEstudianteNoActivadosResponse"/>
+
+<xs:element name="getInscripcionesEstudianteResponse" type="tns:getInscripcionesEstudianteResponse"/>
+
+<xs:element name="getMallaCurricularPensumVigente" type="tns:getMallaCurricularPensumVigente"/>
+
+<xs:element name="getMallaCurricularPensumVigenteResponse" type="tns:getMallaCurricularPensumVigenteResponse"/>
+
+<xs:element name="getMallaCurricularPensumVigenteSinDescripcion" type="tns:getMallaCurricularPensumVigenteSinDescripcion"/>
+
+<xs:element name="getMallaCurricularPensumVigenteSinDescripcionResponse" type="tns:getMallaCurricularPensumVigenteSinDescripcionResponse"/>
+
+<xs:element name="getMateriasAprobadas" type="tns:getMateriasAprobadas"/>
+
+<xs:element name="getMateriasAprobadasResponse" type="tns:getMateriasAprobadasResponse"/>
+
+<xs:element name="getMateriasDocente" type="tns:getMateriasDocente"/>
+
+<xs:element name="getMateriasDocenteResponse" type="tns:getMateriasDocenteResponse"/>
+
+<xs:element name="getMateriasEstudiante" type="tns:getMateriasEstudiante"/>
+
+<xs:element name="getMateriasEstudianteCreditos" type="tns:getMateriasEstudianteCreditos"/>
+
+<xs:element name="getMateriasEstudianteCreditosResponse" type="tns:getMateriasEstudianteCreditosResponse"/>
+
+<xs:element name="getMateriasEstudianteResponse" type="tns:getMateriasEstudianteResponse"/>
+
+<xs:element name="getMateriasNoAprobadas" type="tns:getMateriasNoAprobadas"/>
+
+<xs:element name="getMateriasNoAprobadasResponse" type="tns:getMateriasNoAprobadasResponse"/>
+
+<xs:element name="getMateriasParaleloEstudiante" type="tns:getMateriasParaleloEstudiante"/>
+
+<xs:element name="getMateriasParaleloEstudianteResponse" type="tns:getMateriasParaleloEstudianteResponse"/>
+
+<xs:element name="getMateriasReprobados" type="tns:getMateriasReprobados"/>
+
+<xs:element name="getMateriasReprobadosResponse" type="tns:getMateriasReprobadosResponse"/>
+
+<xs:element name="getParametrosCarrera" type="tns:getParametrosCarrera"/>
+
+<xs:element name="getParametrosCarreraResponse" type="tns:getParametrosCarreraResponse"/>
+
+<xs:element name="getParametrosCarreraTotal" type="tns:getParametrosCarreraTotal"/>
+
+<xs:element name="getParametrosCarreraTotalResponse" type="tns:getParametrosCarreraTotalResponse"/>
+
+<xs:element name="getPromocionesEstudiante" type="tns:getPromocionesEstudiante"/>
+
+<xs:element name="getPromocionesEstudianteResponse" type="tns:getPromocionesEstudianteResponse"/>
+
+<xs:element name="getTitulosCarrera" type="tns:getTitulosCarrera"/>
+
+<xs:element name="getTitulosCarreraResponse" type="tns:getTitulosCarreraResponse"/>
+
+<xs:element name="getTitulosDocentes" type="tns:getTitulosDocentes"/>
+
+<xs:element name="getTitulosDocentesResponse" type="tns:getTitulosDocentesResponse"/>
+
+<xs:element name="getTitulosEstudiante" type="tns:getTitulosEstudiante"/>
+
+<xs:element name="getTitulosEstudianteResponse" type="tns:getTitulosEstudianteResponse"/>
+
+<xs:element name="getTodasMatriculaEstudiantes" type="tns:getTodasMatriculaEstudiantes"/>
+
+<xs:element name="getTodasMatriculaEstudiantesResponse" type="tns:getTodasMatriculaEstudiantesResponse"/>
+
+<xs:element name="getUltimasNotasEstudianteCarrera" type="tns:getUltimasNotasEstudianteCarrera"/>
+
+<xs:element name="getUltimasNotasEstudianteCarreraResponse" type="tns:getUltimasNotasEstudianteCarreraResponse"/>
+
+<xs:complexType name="getDatosMateria">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="codMateria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Materia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorariosDocenteParalelo">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorariosDocenteParaleloResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfHorarioClaseParalelo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionesEstudianteNoActivados">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionesEstudianteNoActivadosResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfInscripcion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMallaCurricularPensumVigenteSinDescripcion">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMallaCurricularPensumVigenteSinDescripcionResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateria_Pensum" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUltimasNotasEstudianteCarrera">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUltimasNotasEstudianteCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfNotas" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEvaluacionesOralGrado">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodTitulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEvaluacionesOralGradoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfActasNotasOralesGrado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionGratuidad">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionGratuidadResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:InscripcionGratuidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEvaluacionesEscritasGrado">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodTitulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEvaluacionesEscritasGradoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfActaNotasEscritasGrado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAlumnosMateria">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodNivel" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodParalelo" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodMateria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAlumnosMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfEstudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParametrosCarrera">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParametrosCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ParamCarrera" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosDocente">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Docente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasParaleloEstudiante">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="codPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasParaleloEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateriaParalelo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConvalidaciones">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConvalidacionesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfConvalidacion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCreditosAprobadosCS">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCreditosAprobadosCSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioExamenesEstudiante">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioExamenesEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfHorarioExamenesEstudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioDocente">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfHorarioDocente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasEstudiante">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="codPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateria" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorariosDocente">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorariosDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfHorarioClase" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInfoGeneralGradoEstudiante">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodTitulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInfoGeneralGradoEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ActaCalGrado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioEstudiante">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHorarioEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfHorarioEstudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParametrosCarreraTotal">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParametrosCarreraTotalResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfParametro" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasDocente">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="codPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateria" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGradosEstudiante">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGradosEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfDatosGrado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasReprobados">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strcedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasReprobadosResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateriasR" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosEstudianteMatriculado">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosEstudianteMatriculadoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMallaCurricularPensumVigente">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="pensum" type="xs:string" minOccurs="0"/>
+<xs:element name="getMallaCurricularPensumVigenteResult" type="ns1:ArrayOfMateria_Pensum" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMallaCurricularPensumVigenteResponse">
+<xs:sequence>
+<xs:element name="pensum" type="xs:string" minOccurs="0"/>
+<xs:element name="getMallaCurricularPensumVigenteResult" type="ns1:ArrayOfMateria_Pensum" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosEstudiante">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfTitulosEst" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoEstudianteCarrera">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoEstudianteCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosCompletosEstudiante">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosCompletosEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Estudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromocionesEstudiante">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromocionesEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfPromocionesEst" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasEstudianteCreditos">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="codPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasEstudianteCreditosResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateriasCre" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActaGradoEstudiante">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodTitulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActaGradoEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Acta" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDictadosMateria">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="codMateria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDictadosMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfDictado_Materia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasNoAprobadas">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasNoAprobadasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMaterias_no_aprobadas" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosMatricula">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosMatriculaResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Matricula" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosCarrera">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfCarreraTitulos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosDocentes">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTitulosDocentesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfTitulosDocente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionesEstudiante">
+<xs:sequence>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInscripcionesEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfInscripcion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosUsuarioCarrera">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosUsuarioCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosInscInstSexo">
+<xs:sequence>
+<xs:element name="strPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDatosInscInstSexoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfDatosInscritosInstSexo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasAprobadas">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMateriasAprobadasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMaterias_aprobadas" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasMatriculaEstudiantes">
+<xs:sequence>
+<xs:element name="strCodCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPeriodo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasMatriculaEstudiantesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfTodasMatriculaEstudiantes" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

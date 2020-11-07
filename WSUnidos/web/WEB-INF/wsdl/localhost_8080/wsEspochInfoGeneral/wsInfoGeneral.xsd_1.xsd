@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://misServiciosInfoGeneral/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://misServiciosInfoGeneral/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://localhost:8080/wsEspochInfoGeneral/wsInfoGeneral?xsd=2"/>
+
+<xs:element name="getCarrerasAbiertas" type="tns:getCarrerasAbiertas"/>
+
+<xs:element name="getCarrerasAbiertasResponse" type="tns:getCarrerasAbiertasResponse"/>
+
+<xs:element name="getCiudades" type="tns:getCiudades"/>
+
+<xs:element name="getCiudadesResponse" type="tns:getCiudadesResponse"/>
+
+<xs:element name="getEscuelaEntidad" type="tns:getEscuelaEntidad"/>
+
+<xs:element name="getEscuelaEntidadResponse" type="tns:getEscuelaEntidadResponse"/>
+
+<xs:element name="getFacultadesTotales" type="tns:getFacultadesTotales"/>
+
+<xs:element name="getFacultadesTotalesResponse" type="tns:getFacultadesTotalesResponse"/>
+
+<xs:element name="getInstitucionEstudiante" type="tns:getInstitucionEstudiante"/>
+
+<xs:element name="getInstitucionEstudianteResponse" type="tns:getInstitucionEstudianteResponse"/>
+
+<xs:element name="getPaises" type="tns:getPaises"/>
+
+<xs:element name="getPaisesResponse" type="tns:getPaisesResponse"/>
+
+<xs:element name="getPeriodoActual" type="tns:getPeriodoActual"/>
+
+<xs:element name="getPeriodoActualResponse" type="tns:getPeriodoActualResponse"/>
+
+<xs:element name="getPeriodosAcademicos" type="tns:getPeriodosAcademicos"/>
+
+<xs:element name="getPeriodosAcademicosResponse" type="tns:getPeriodosAcademicosResponse"/>
+
+<xs:element name="getProvincias" type="tns:getProvincias"/>
+
+<xs:element name="getProvinciasResponse" type="tns:getProvinciasResponse"/>
+
+<xs:element name="getTiposInstituciones" type="tns:getTiposInstituciones"/>
+
+<xs:element name="getTiposInstitucionesResponse" type="tns:getTiposInstitucionesResponse"/>
+
+<xs:element name="getTodasCarreras" type="tns:getTodasCarreras"/>
+
+<xs:element name="getTodasCarrerasResponse" type="tns:getTodasCarrerasResponse"/>
+
+<xs:element name="getTodasCarrerasTotales" type="tns:getTodasCarrerasTotales"/>
+
+<xs:element name="getTodasCarrerasTotalesResponse" type="tns:getTodasCarrerasTotalesResponse"/>
+
+<xs:element name="getTodasEscuelas" type="tns:getTodasEscuelas"/>
+
+<xs:element name="getTodasEscuelasResponse" type="tns:getTodasEscuelasResponse"/>
+
+<xs:element name="getTodasEscuelasTotales" type="tns:getTodasEscuelasTotales"/>
+
+<xs:element name="getTodasEscuelasTotalesResponse" type="tns:getTodasEscuelasTotalesResponse"/>
+
+<xs:element name="getTodasFacultades" type="tns:getTodasFacultades"/>
+
+<xs:element name="getTodasFacultadesResponse" type="tns:getTodasFacultadesResponse"/>
+
+<xs:complexType name="getCiudades">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCiudadesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfCiudad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasCarrerasTotales">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTodasCarrerasTotalesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfUnidadAcademica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasCarreras">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTodasCarrerasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfUnidadAcademica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFacultadesTotales">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFacultadesTotalesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfFacultad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeriodosAcademicos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPeriodosAcademicosResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfPeriodo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProvincias">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getProvinciasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfProvincia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasFacultades">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTodasFacultadesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfFacultad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCarrerasAbiertas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCarrerasAbiertasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfCarrera" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInstitucionEstudiante">
+<xs:sequence>
+<xs:element name="strcedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInstitucionEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfInstitucionEstudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasEscuelas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTodasEscuelasResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfEscuela" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEscuelaEntidad">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getEscuelaEntidadResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfEscuelaEntidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPaises">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPaisesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfPais" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodasEscuelasTotales">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTodasEscuelasTotalesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfEscuela" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeriodoActual">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPeriodoActualResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Periodo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTiposInstituciones">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTiposInstitucionesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfTipos_Instituciones" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/09/2017, 16:31:06
+    Author     : Evelyn
+*/
+.tablaFilaReportes{
+    height: 45%;
+    width: 100%;
+}
+.columnaReportes{
+    width: 32%;
+}
+.tablaColumnaReportes{
+    height: 100%;
+    width: 100%;
+}
+.reportespacio{
+    width: 2%;
+}
+
+.columnaReportesNombre{
+    height: 4%;
+    border: 1px solid rgb(204,204,204);
+    background-color: rgb(234,234,234);
+    font-size: 9px;
+    color: rgb(30,70,130);
+    font-weight: bold;
+}
+.columnaAsignaturas{
+    width: 50%;
+    border: 1px solid rgb(204,204,204);
+}
+.columnaDocentes{
+    width: 50%;
+     border: 1px solid rgb(204,204,204);
+}
+
+.reportegrafico{
+    height: 92%;
+    border: 1px solid rgb(204,204,204);
+}
+.columnaReportesVacio{
+    height: 4%;
+}
+.reportegraficoVacio{
+    height: 92%;
+}

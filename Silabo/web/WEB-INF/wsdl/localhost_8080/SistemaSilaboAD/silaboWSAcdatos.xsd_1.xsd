@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://sw.silabo.dda/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sw.silabo.dda/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://localhost:8080/SistemaSilaboAD/silaboWSAcdatos?xsd=2"/>
+
+<xs:element name="ActividadesAprendizajeCargar" type="tns:ActividadesAprendizajeCargar"/>
+
+<xs:element name="ActividadesAprendizajeCargarResponse" type="tns:ActividadesAprendizajeCargarResponse"/>
+
+<xs:element name="ActividadesAprendizajeGuardar" type="tns:ActividadesAprendizajeGuardar"/>
+
+<xs:element name="ActividadesAprendizajeGuardarResponse" type="tns:ActividadesAprendizajeGuardarResponse"/>
+
+<xs:element name="ActividadesEliminarAdm" type="tns:ActividadesEliminarAdm"/>
+
+<xs:element name="ActividadesEliminarAdmResponse" type="tns:ActividadesEliminarAdmResponse"/>
+
+<xs:element name="ActividadesGuardarAdm" type="tns:ActividadesGuardarAdm"/>
+
+<xs:element name="ActividadesGuardarAdmResponse" type="tns:ActividadesGuardarAdmResponse"/>
+
+<xs:element name="BibliografiasCargar" type="tns:BibliografiasCargar"/>
+
+<xs:element name="BibliografiasCargarResponse" type="tns:BibliografiasCargarResponse"/>
+
+<xs:element name="BibliografiasGuardar" type="tns:BibliografiasGuardar"/>
+
+<xs:element name="BibliografiasGuardarResponse" type="tns:BibliografiasGuardarResponse"/>
+
+<xs:element name="CalificacionesGuardar" type="tns:CalificacionesGuardar"/>
+
+<xs:element name="CalificacionesGuardarResponse" type="tns:CalificacionesGuardarResponse"/>
+
+<xs:element name="DatosDocentesCargar" type="tns:DatosDocentesCargar"/>
+
+<xs:element name="DatosDocentesCargarResponse" type="tns:DatosDocentesCargarResponse"/>
+
+<xs:element name="DatosGeneralesCargar" type="tns:DatosGeneralesCargar"/>
+
+<xs:element name="DatosGeneralesCargarResponse" type="tns:DatosGeneralesCargarResponse"/>
+
+<xs:element name="DocenteInformacionCargar" type="tns:DocenteInformacionCargar"/>
+
+<xs:element name="DocenteInformacionCargarResponse" type="tns:DocenteInformacionCargarResponse"/>
+
+<xs:element name="EscenariosCargar" type="tns:EscenariosCargar"/>
+
+<xs:element name="EscenariosCargarResponse" type="tns:EscenariosCargarResponse"/>
+
+<xs:element name="EscenariosEliminarAdm" type="tns:EscenariosEliminarAdm"/>
+
+<xs:element name="EscenariosEliminarAdmResponse" type="tns:EscenariosEliminarAdmResponse"/>
+
+<xs:element name="EscenariosGuardar" type="tns:EscenariosGuardar"/>
+
+<xs:element name="EscenariosGuardarAdm" type="tns:EscenariosGuardarAdm"/>
+
+<xs:element name="EscenariosGuardarAdmResponse" type="tns:EscenariosGuardarAdmResponse"/>
+
+<xs:element name="EscenariosGuardarResponse" type="tns:EscenariosGuardarResponse"/>
+
+<xs:element name="EstrategiasCargar" type="tns:EstrategiasCargar"/>
+
+<xs:element name="EstrategiasCargarResponse" type="tns:EstrategiasCargarResponse"/>
+
+<xs:element name="EstrategiasEliminarAdm" type="tns:EstrategiasEliminarAdm"/>
+
+<xs:element name="EstrategiasEliminarAdmResponse" type="tns:EstrategiasEliminarAdmResponse"/>
+
+<xs:element name="EstrategiasGuardar" type="tns:EstrategiasGuardar"/>
+
+<xs:element name="EstrategiasGuardarAdm" type="tns:EstrategiasGuardarAdm"/>
+
+<xs:element name="EstrategiasGuardarAdmResponse" type="tns:EstrategiasGuardarAdmResponse"/>
+
+<xs:element name="EstrategiasGuardarResponse" type="tns:EstrategiasGuardarResponse"/>
+
+<xs:element name="EvaluacionesCargar" type="tns:EvaluacionesCargar"/>
+
+<xs:element name="EvaluacionesCargarResponse" type="tns:EvaluacionesCargarResponse"/>
+
+<xs:element name="InsertarObjetivoAD" type="tns:InsertarObjetivoAD"/>
+
+<xs:element name="InsertarObjetivoADResponse" type="tns:InsertarObjetivoADResponse"/>
+
+<xs:element name="MateriaCargar" type="tns:MateriaCargar"/>
+
+<xs:element name="MateriaCargarResponse" type="tns:MateriaCargarResponse"/>
+
+<xs:element name="RecursosCargar" type="tns:RecursosCargar"/>
+
+<xs:element name="RecursosCargarResponse" type="tns:RecursosCargarResponse"/>
+
+<xs:element name="RecursosEliminarAdm" type="tns:RecursosEliminarAdm"/>
+
+<xs:element name="RecursosEliminarAdmResponse" type="tns:RecursosEliminarAdmResponse"/>
+
+<xs:element name="RecursosGuardar" type="tns:RecursosGuardar"/>
+
+<xs:element name="RecursosGuardarAdm" type="tns:RecursosGuardarAdm"/>
+
+<xs:element name="RecursosGuardarAdmResponse" type="tns:RecursosGuardarAdmResponse"/>
+
+<xs:element name="RecursosGuardarResponse" type="tns:RecursosGuardarResponse"/>
+
+<xs:element name="SilaboPdfGenerar" type="tns:SilaboPdfGenerar"/>
+
+<xs:element name="SilaboPdfGenerarResponse" type="tns:SilaboPdfGenerarResponse"/>
+
+<xs:element name="UnidadActualizar" type="tns:UnidadActualizar"/>
+
+<xs:element name="UnidadActualizarResponse" type="tns:UnidadActualizarResponse"/>
+
+<xs:element name="UnidadCargar" type="tns:UnidadCargar"/>
+
+<xs:element name="UnidadCargarResponse" type="tns:UnidadCargarResponse"/>
+
+<xs:element name="UnidadesAcademicasDocenteCargar" type="tns:UnidadesAcademicasDocenteCargar"/>
+
+<xs:element name="UnidadesAcademicasDocenteCargarResponse" type="tns:UnidadesAcademicasDocenteCargarResponse"/>
+
+<xs:element name="autenticarUsuario" type="tns:autenticarUsuario"/>
+
+<xs:element name="autenticarUsuarioResponse" type="tns:autenticarUsuarioResponse"/>
+
+<xs:element name="getIdSilabo" type="tns:getIdSilabo"/>
+
+<xs:element name="getIdSilaboResponse" type="tns:getIdSilaboResponse"/>
+
+<xs:element name="getObservacionesSecciones" type="tns:getObservacionesSecciones"/>
+
+<xs:element name="getObservacionesSeccionesResponse" type="tns:getObservacionesSeccionesResponse"/>
+
+<xs:element name="getObservacionesSubsecciones" type="tns:getObservacionesSubsecciones"/>
+
+<xs:element name="getObservacionesSubseccionesResponse" type="tns:getObservacionesSubseccionesResponse"/>
+
+<xs:complexType name="EstrategiasCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesSubsecciones">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesSubseccionesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:observacion" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="observacion">
+<xs:sequence>
+<xs:element name="descsec" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="id_observacion" type="xs:int" minOccurs="0"/>
+<xs:element name="id_seccion" type="xs:int" minOccurs="0"/>
+<xs:element name="observacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadCargar">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="UnidadCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clEstructuraDesarrollo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clEstructuraDesarrollo">
+<xs:sequence>
+<xs:element name="ayuda" type="xs:string" minOccurs="0"/>
+<xs:element name="titulo" type="xs:string" minOccurs="0"/>
+<xs:element name="unidad" type="tns:clUnidad" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clUnidad">
+<xs:sequence>
+<xs:element name="idSeccion" type="xs:int" minOccurs="0"/>
+<xs:element name="idUnidad" type="xs:int" minOccurs="0"/>
+<xs:element name="logro" type="xs:string" minOccurs="0"/>
+<xs:element name="objetivo" type="xs:string" minOccurs="0"/>
+<xs:element name="temas" type="tns:clUnidadTema" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="titulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clUnidadTema">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_temas" type="xs:int" minOccurs="0"/>
+<xs:element name="id_unidad" type="xs:int" minOccurs="0"/>
+<xs:element name="subtemas" type="tns:clTemaSubtema" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clTemaSubtema">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_temas" type="xs:int" minOccurs="0"/>
+<xs:element name="id_temas_subtemas" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocenteInformacionCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DocenteInformacionCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CalificacionesGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CalificacionesGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DatosDocentesCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DatosDocentesCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MateriaCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MateriaCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="tns:estrategias" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estrategias">
+<xs:sequence>
+<xs:element name="ayuda" type="xs:string" minOccurs="0"/>
+<xs:element name="estrategias" type="tns:estrategia" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="observaciones" type="tns:observacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="silabos" type="tns:silabo" minOccurs="0"/>
+<xs:element name="titulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estrategia">
+<xs:sequence>
+<xs:element name="chv_check" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_estrategia" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="silabo">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="codMateria" type="xs:string" minOccurs="0"/>
+<xs:element name="idSilabo" type="xs:int" minOccurs="0"/>
+<xs:element name="idUnidad" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesAprendizajeCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesAprendizajeCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SilaboPdfGenerar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SilaboPdfGenerarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BibliografiasGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BibliografiasGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasEliminarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasEliminarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasGuardarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="tns:estrategias" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EstrategiasGuardarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosGuardarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosGuardarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesEliminarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesEliminarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EvaluacionesCargar">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="EvaluacionesCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosEliminarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosEliminarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autenticarUsuario">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autenticarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfRolCarrera" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosGuardarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EscenariosGuardarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIdSilabo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIdSilaboResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadActualizar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadActualizarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosEliminarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosEliminarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadesAcademicasDocenteCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnidadesAcademicasDocenteCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BibliografiasCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BibliografiasCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesAprendizajeGuardar">
+<xs:sequence>
+<xs:element name="arg0" type="tns:actividades" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actividades">
+<xs:sequence>
+<xs:element name="actividades" type="tns:actividad" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="ayuda" type="xs:string" minOccurs="0"/>
+<xs:element name="observaciones" type="tns:observacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="silabos" type="tns:silabo" minOccurs="0"/>
+<xs:element name="titulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actividad">
+<xs:sequence>
+<xs:element name="chv_check" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_actividades_aprendizaje" type="xs:int" minOccurs="0"/>
+<xs:element name="tipo_actividad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesAprendizajeGuardarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RecursosCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesSecciones">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesSeccionesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:observacion" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesGuardarAdm">
+<xs:sequence>
+<xs:element name="arg0" type="tns:actividades" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActividadesGuardarAdmResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertarObjetivoAD">
+<xs:sequence>
+<xs:element name="arg0" type="tns:clEstructuraDesarrollo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertarObjetivoADResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DatosGeneralesCargar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DatosGeneralesCargarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

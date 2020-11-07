@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://misServiciosEspochSeguridad/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://misServiciosEspochSeguridad/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://localhost:8080/wsEspochSeguridad/wsEspochSeguridad?xsd=2"/>
+
+<xs:element name="autenticarUsuarioCarrera" type="tns:autenticarUsuarioCarrera"/>
+
+<xs:element name="autenticarUsuarioCarreraResponse" type="tns:autenticarUsuarioCarreraResponse"/>
+
+<xs:element name="getRolUsuarioCarrera" type="tns:getRolUsuarioCarrera"/>
+
+<xs:element name="getRolUsuarioCarreraResponse" type="tns:getRolUsuarioCarreraResponse"/>
+
+<xs:element name="getUsuarioFacultad" type="tns:getUsuarioFacultad"/>
+
+<xs:element name="getUsuarioFacultadResponse" type="tns:getUsuarioFacultadResponse"/>
+
+<xs:complexType name="autenticarUsuarioCarrera">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autenticarUsuarioCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfRolCarrera" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRolUsuarioCarrera">
+<xs:sequence>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRolUsuarioCarreraResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfRolCarrera" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuarioFacultad">
+<xs:sequence>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuarioFacultadResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

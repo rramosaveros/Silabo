@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+.dda-pc {
+    width: 100%;
+    height: 100%;
+}
+
+.dda-pc-fila {
+    height: 230px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.dda-pc-elemento {
+    border: 1px solid rgb(204,204,204);
+    color: rgb(30,70,130);
+    font-size: 9px;
+    display: inline-block;
+
+    height: 227px;
+    width: 254px;
+    padding: 0px;
+    margin: 0px 4px;
+}
+
+.dda-pc-elemento-contenido {
+    border-top: 1px solid rgb(204,204,204);
+    border-bottom: 1px solid rgb(204,204,204);
+    height: 195px;
+    padding: 3px;
+}
+
+.dda-pc-elemento-titulo,
+.dda-pc-elemento-pie {
+    background-color: rgb(234,234,234);
+    height: 15px;
+
+    font-weight: bold !important;
+}
+
+.dda-pc-elemento-titulo {
+    padding: 2px 5px;
+    text-align: left;
+}
+
+.dda-pc-elemento-titulo-plantilla {
+    height: 11px;
+    width: 121px;
+    border-radius: 5px;
+    background-color: rgb(30,70,130);
+}
+
+.dda-pc-elemento-pie {
+    padding-right: 5px;
+}
+
+.dda-pc-elemento-pie-mas {
+    height: 32px;
+    width: 32px !important;
+
+    border-radius: 16px;
+    border: 1px solid rgb(204,204,204);
+    position: relative;
+    text-align: center;
+    padding: 0px !important;
+    float: right;
+    right: -11px;
+    top: -9px;
+    background-color: #eaeaea;
+}
+
+.dda-pc-elemento-pie-mas:hover {
+    cursor: pointer;
+    color: #1e4682;
+}
+
+.dda-pc-elemento-pie-mas-icono {
+    color: #1e4682;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    padding: 0px !important;
+    width: 17px !important;
+    top: -4px;
+    left: 1px;
+}
+

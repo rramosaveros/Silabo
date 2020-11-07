@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="mainclientconfig" 
+ >
+    <import location="wsInfoCarrera.xml" namespace="http://misServiciosInfoCarrera/"/>
+    <import location="wsInfoGeneral.xml" namespace="http://misServiciosInfoGeneral/"/>
+    <import location="wsEspochSeguridad.xml" namespace="http://misServiciosEspochSeguridad/"/>
+    <import location="Seguridad.asmx.xml" namespace="http://academico.espoch.edu.ec/"/>
+    <import location="InfoGeneral.asmx.xml" namespace="http://academico.espoch.edu.ec/"/>
+    <import location="InfoCarrera.asmx.xml" namespace="http://academico.espoch.edu.ec/"/>
+    <import location="wsAnaliticoPublico.xml" namespace="http://ws.panalitico.dda/"/>
+    <import location="SilaboSWPublico.xml" namespace="http://sw.silabo.dda/"/>
+</definitions>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="wsUnidosEspoch" targetNamespace="http://locales.ServiciosWeb.pa/" xmlns:tns="http://locales.ServiciosWeb.pa/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sc="http://schemas.sun.com/2006/03/wss/server" xmlns:wspp="http://java.sun.com/xml/ns/wsit/policy" 
+ >
+    <message name="getUnidadesAsignaturas"/>
+    <message name="getUnidadesAsignaturasResponse"/>
+    <message name="redisFlushAll"/>
+    <message name="redisFlushAllResponse"/>
+    <message name="DocentesCarrera"/>
+    <message name="DocentesCarreraResponse"/>
+    <message name="DocentesEscuela"/>
+    <message name="DocentesEscuelaResponse"/>
+    <message name="DocentesFacultad"/>
+    <message name="DocentesFacultadResponse"/>
+    <message name="AsignaturasCarrera"/>
+    <message name="AsignaturasCarreraResponse"/>
+    <message name="UnidadesAcademicasCargar"/>
+    <message name="UnidadesAcademicasCargarResponse"/>
+    <message name="arbolFacultad"/>
+    <message name="arbolFacultadResponse"/>
+    <message name="arbolEscuela"/>
+    <message name="arbolEscuelaResponse"/>
+    <message name="arbolCarrera"/>
+    <message name="arbolCarreraResponse"/>
+    <message name="PeriodoValido"/>
+    <message name="PeriodoValidoResponse"/>
+    <message name="PensumValido"/>
+    <message name="PensumValidoResponse"/>
+    <message name="DocentesCamposFormacion"/>
+    <message name="DocentesCamposFormacionResponse"/>
+    <message name="CamposFormacionCarrera"/>
+    <message name="CamposFormacionCarreraResponse"/>
+    <message name="FacultadesLista"/>
+    <message name="FacultadesListaResponse"/>
+    <message name="EscuelasLista"/>
+    <message name="EscuelasListaResponse"/>
+    <message name="CarrerasLista"/>
+    <message name="CarrerasListaResponse"/>
+    <message name="DocenteInformacion"/>
+    <message name="DocenteInformacionResponse"/>
+    <portType name="wsUnidosEspoch">
+        <operation name="getUnidadesAsignaturas">
+            <input message="tns:getUnidadesAsignaturas"/>
+            <output message="tns:getUnidadesAsignaturasResponse"/>
+        </operation>
+        <operation name="redisFlushAll">
+            <input message="tns:redisFlushAll"/>
+            <output message="tns:redisFlushAllResponse"/>
+        </operation>
+        <operation name="DocentesCarrera">
+            <input message="tns:DocentesCarrera"/>
+            <output message="tns:DocentesCarreraResponse"/>
+        </operation>
+        <operation name="DocentesEscuela">
+            <input message="tns:DocentesEscuela"/>
+            <output message="tns:DocentesEscuelaResponse"/>
+        </operation>
+        <operation name="DocentesFacultad">
+            <input message="tns:DocentesFacultad"/>
+            <output message="tns:DocentesFacultadResponse"/>
+        </operation>
+        <operation name="AsignaturasCarrera">
+            <input message="tns:AsignaturasCarrera"/>
+            <output message="tns:AsignaturasCarreraResponse"/>
+        </operation>
+        <operation name="UnidadesAcademicasCargar">
+            <input message="tns:UnidadesAcademicasCargar"/>
+            <output message="tns:UnidadesAcademicasCargarResponse"/>
+        </operation>
+        <operation name="arbolFacultad">
+            <input message="tns:arbolFacultad"/>
+            <output message="tns:arbolFacultadResponse"/>
+        </operation>
+        <operation name="arbolEscuela">
+            <input message="tns:arbolEscuela"/>
+            <output message="tns:arbolEscuelaResponse"/>
+        </operation>
+        <operation name="arbolCarrera">
+            <input message="tns:arbolCarrera"/>
+            <output message="tns:arbolCarreraResponse"/>
+        </operation>
+        <operation name="PeriodoValido">
+            <input message="tns:PeriodoValido"/>
+            <output message="tns:PeriodoValidoResponse"/>
+        </operation>
+        <operation name="PensumValido">
+            <input message="tns:PensumValido"/>
+            <output message="tns:PensumValidoResponse"/>
+        </operation>
+        <operation name="DocentesCamposFormacion">
+            <input message="tns:DocentesCamposFormacion"/>
+            <output message="tns:DocentesCamposFormacionResponse"/>
+        </operation>
+        <operation name="CamposFormacionCarrera">
+            <input message="tns:CamposFormacionCarrera"/>
+            <output message="tns:CamposFormacionCarreraResponse"/>
+        </operation>
+        <operation name="FacultadesLista">
+            <input message="tns:FacultadesLista"/>
+            <output message="tns:FacultadesListaResponse"/>
+        </operation>
+        <operation name="EscuelasLista">
+            <input message="tns:EscuelasLista"/>
+            <output message="tns:EscuelasListaResponse"/>
+        </operation>
+        <operation name="CarrerasLista">
+            <input message="tns:CarrerasLista"/>
+            <output message="tns:CarrerasListaResponse"/>
+        </operation>
+        <operation name="DocenteInformacion">
+            <input message="tns:DocenteInformacion"/>
+            <output message="tns:DocenteInformacionResponse"/>
+        </operation>
+    </portType>
+    <binding name="wsUnidosEspochPortBinding" type="tns:wsUnidosEspoch">
+        <wsp:PolicyReference URI="#wsUnidosEspochPortBindingPolicy"/>
+        <operation name="getUnidadesAsignaturas">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="redisFlushAll">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="DocentesCarrera">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="DocentesEscuela">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="DocentesFacultad">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="AsignaturasCarrera">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="UnidadesAcademicasCargar">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="arbolFacultad">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="arbolEscuela">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="arbolCarrera">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="PeriodoValido">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="PensumValido">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="DocentesCamposFormacion">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="CamposFormacionCarrera">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="FacultadesLista">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="EscuelasLista">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="CarrerasLista">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="DocenteInformacion">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="wsUnidosEspoch">
+        <port name="wsUnidosEspochPort" binding="tns:wsUnidosEspochPortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <tcp:OptimizedTCPTransport enabled="true"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_CamposFormacionCarrera_Input_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_CamposFormacionCarrera_Output_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Facultades_Input_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Facultades_Output_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Escuelas_Input_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Escuelas_Output_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Carreras_Input_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="wsUnidosEspochPortBinding_Carreras_Output_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:EncryptedParts>
+                    <sp:Body/>
+                </sp:EncryptedParts>
+                <sp:SignedParts>
+                    <sp:Body/>
+                </sp:SignedParts>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

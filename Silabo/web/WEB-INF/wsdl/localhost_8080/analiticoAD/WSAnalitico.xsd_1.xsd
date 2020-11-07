@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.pa/" xmlns:ns1="http://academico.espoch.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.pa/">
+
+<xs:import namespace="http://academico.espoch.edu.ec/" schemaLocation="http://localhost:8080/analiticoAD/WSAnalitico?xsd=2"/>
+
+<xs:element name="lDevolverAyuda" type="tns:lDevolverAyuda"/>
+
+<xs:element name="lDevolverAyudaResponse" type="tns:lDevolverAyudaResponse"/>
+
+<xs:element name="lDevolverBibliografia" type="tns:lDevolverBibliografia"/>
+
+<xs:element name="lDevolverBibliografiaResponse" type="tns:lDevolverBibliografiaResponse"/>
+
+<xs:element name="lDevolverCaracterizacionPA" type="tns:lDevolverCaracterizacionPA"/>
+
+<xs:element name="lDevolverCaracterizacionPAResponse" type="tns:lDevolverCaracterizacionPAResponse"/>
+
+<xs:element name="lDevolverEscuelasFacultad" type="tns:lDevolverEscuelasFacultad"/>
+
+<xs:element name="lDevolverEscuelasFacultadResponse" type="tns:lDevolverEscuelasFacultadResponse"/>
+
+<xs:element name="lDevolverFacultades" type="tns:lDevolverFacultades"/>
+
+<xs:element name="lDevolverFacultadesResponse" type="tns:lDevolverFacultadesResponse"/>
+
+<xs:element name="lDevolverMenuProgramaAnalitico" type="tns:lDevolverMenuProgramaAnalitico"/>
+
+<xs:element name="lDevolverMenuProgramaAnaliticoGestion" type="tns:lDevolverMenuProgramaAnaliticoGestion"/>
+
+<xs:element name="lDevolverMenuProgramaAnaliticoGestionResponse" type="tns:lDevolverMenuProgramaAnaliticoGestionResponse"/>
+
+<xs:element name="lDevolverMenuProgramaAnaliticoResponse" type="tns:lDevolverMenuProgramaAnaliticoResponse"/>
+
+<xs:element name="lDevolverMetodologia" type="tns:lDevolverMetodologia"/>
+
+<xs:element name="lDevolverMetodologiaResponse" type="tns:lDevolverMetodologiaResponse"/>
+
+<xs:element name="lDevolverObjetivoPA" type="tns:lDevolverObjetivoPA"/>
+
+<xs:element name="lDevolverObjetivoPAResponse" type="tns:lDevolverObjetivoPAResponse"/>
+
+<xs:element name="lDevolverObservacion" type="tns:lDevolverObservacion"/>
+
+<xs:element name="lDevolverObservacionResponse" type="tns:lDevolverObservacionResponse"/>
+
+<xs:element name="lDevolverProcedimientosPA" type="tns:lDevolverProcedimientosPA"/>
+
+<xs:element name="lDevolverProcedimientosPAResponse" type="tns:lDevolverProcedimientosPAResponse"/>
+
+<xs:element name="lGuardarBibliografia" type="tns:lGuardarBibliografia"/>
+
+<xs:element name="lGuardarBibliografiaResponse" type="tns:lGuardarBibliografiaResponse"/>
+
+<xs:element name="lGuardarMetodologia" type="tns:lGuardarMetodologia"/>
+
+<xs:element name="lGuardarMetodologiaResponse" type="tns:lGuardarMetodologiaResponse"/>
+
+<xs:element name="lGuardarObjetivo" type="tns:lGuardarObjetivo"/>
+
+<xs:element name="lGuardarObjetivoResponse" type="tns:lGuardarObjetivoResponse"/>
+
+<xs:element name="lGuardarProcedimientos" type="tns:lGuardarProcedimientos"/>
+
+<xs:element name="lGuardarProcedimientosResponse" type="tns:lGuardarProcedimientosResponse"/>
+
+<xs:element name="lLoadUnidadesAcademicas" type="tns:lLoadUnidadesAcademicas"/>
+
+<xs:element name="lLoadUnidadesAcademicasDocente" type="tns:lLoadUnidadesAcademicasDocente"/>
+
+<xs:element name="lLoadUnidadesAcademicasDocenteResponse" type="tns:lLoadUnidadesAcademicasDocenteResponse"/>
+
+<xs:element name="lLoadUnidadesAcademicasResponse" type="tns:lLoadUnidadesAcademicasResponse"/>
+
+<xs:element name="lPAActualizarPerfilDocente" type="tns:lPAActualizarPerfilDocente"/>
+
+<xs:element name="lPAActualizarPerfilDocenteResponse" type="tns:lPAActualizarPerfilDocenteResponse"/>
+
+<xs:element name="lPADatosGenerales" type="tns:lPADatosGenerales"/>
+
+<xs:element name="lPADatosGeneralesResponse" type="tns:lPADatosGeneralesResponse"/>
+
+<xs:element name="lPADevolverContenidos" type="tns:lPADevolverContenidos"/>
+
+<xs:element name="lPADevolverContenidosAsHTML" type="tns:lPADevolverContenidosAsHTML"/>
+
+<xs:element name="lPADevolverContenidosAsHTMLResponse" type="tns:lPADevolverContenidosAsHTMLResponse"/>
+
+<xs:element name="lPADevolverContenidosResponse" type="tns:lPADevolverContenidosResponse"/>
+
+<xs:element name="lPADevolverDatosGenerales" type="tns:lPADevolverDatosGenerales"/>
+
+<xs:element name="lPADevolverDatosGeneralesResponse" type="tns:lPADevolverDatosGeneralesResponse"/>
+
+<xs:element name="lPADevolverPerfilDocente" type="tns:lPADevolverPerfilDocente"/>
+
+<xs:element name="lPADevolverPerfilDocenteResponse" type="tns:lPADevolverPerfilDocenteResponse"/>
+
+<xs:element name="lPADevolverPeriodoActual" type="tns:lPADevolverPeriodoActual"/>
+
+<xs:element name="lPADevolverPeriodoActualResponse" type="tns:lPADevolverPeriodoActualResponse"/>
+
+<xs:element name="lPADevolverRecursos" type="tns:lPADevolverRecursos"/>
+
+<xs:element name="lPADevolverRecursosResponse" type="tns:lPADevolverRecursosResponse"/>
+
+<xs:element name="lPADevolverRecursosTotales" type="tns:lPADevolverRecursosTotales"/>
+
+<xs:element name="lPADevolverRecursosTotalesAsHTML" type="tns:lPADevolverRecursosTotalesAsHTML"/>
+
+<xs:element name="lPADevolverRecursosTotalesAsHTMLResponse" type="tns:lPADevolverRecursosTotalesAsHTMLResponse"/>
+
+<xs:element name="lPADevolverRecursosTotalesResponse" type="tns:lPADevolverRecursosTotalesResponse"/>
+
+<xs:element name="lPAGuardarContenidos" type="tns:lPAGuardarContenidos"/>
+
+<xs:element name="lPAGuardarContenidosResponse" type="tns:lPAGuardarContenidosResponse"/>
+
+<xs:element name="lPAUpdateCaracterizacion" type="tns:lPAUpdateCaracterizacion"/>
+
+<xs:element name="lPAUpdateCaracterizacionResponse" type="tns:lPAUpdateCaracterizacionResponse"/>
+
+<xs:element name="lPAUpdateRecursos" type="tns:lPAUpdateRecursos"/>
+
+<xs:element name="lPAUpdateRecursosResponse" type="tns:lPAUpdateRecursosResponse"/>
+
+<xs:element name="lPAgetDictadosMateria" type="tns:lPAgetDictadosMateria"/>
+
+<xs:element name="lPAgetDictadosMateriaResponse" type="tns:lPAgetDictadosMateriaResponse"/>
+
+<xs:complexType name="lPADevolverContenidosAsHTML">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverContenidosAsHTMLResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarBibliografia">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="BibliografiaBasica" type="xs:string" minOccurs="0"/>
+<xs:element name="BibliografiaComplementaria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarBibliografiaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursos">
+<xs:sequence>
+<xs:element name="strCodPrograma" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePARecursos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePARecursos">
+<xs:sequence>
+<xs:element name="objListaRecursos" type="tns:clasePARecurso" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePARecurso">
+<xs:sequence>
+<xs:element name="intCodProgramaAnalitico" type="xs:int" minOccurs="0"/>
+<xs:element name="intCodTipoRecursos" type="xs:int" minOccurs="0"/>
+<xs:element name="strDetalleRecurso" type="xs:string" minOccurs="0"/>
+<xs:element name="strEstado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAGuardarContenidos">
+<xs:sequence>
+<xs:element name="contenidos" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAGuardarContenidosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAgetDictadosMateria">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAgetDictadosMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfDictado_Materia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverCaracterizacionPA">
+<xs:sequence>
+<xs:element name="strCodPrograma" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverCaracterizacionPAResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:claseCaracterizacion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseCaracterizacion">
+<xs:sequence>
+<xs:element name="intCodCaracterizacion" type="xs:int" minOccurs="0"/>
+<xs:element name="intCodPrograma" type="xs:int" minOccurs="0"/>
+<xs:element name="strDetalle" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverPerfilDocente">
+<xs:sequence>
+<xs:element name="codigoMateria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverPerfilDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePerfilDocente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePerfilDocente">
+<xs:sequence>
+<xs:element name="campoAmplio" type="xs:string" minOccurs="0"/>
+<xs:element name="campoEspecifico" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverBibliografia">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverBibliografiaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePABibliografia" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePABibliografia">
+<xs:sequence>
+<xs:element name="citaBibliografica" type="xs:string" minOccurs="0"/>
+<xs:element name="codBibliografia" type="xs:int" minOccurs="0"/>
+<xs:element name="tipoBibliografia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverContenidos">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverContenidosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:claseContenidos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseContenidos">
+<xs:sequence>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="unidades" type="tns:claseUnidad" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseUnidad">
+<xs:sequence>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="temas" type="tns:claseTema" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseTema">
+<xs:sequence>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="subtemas" type="tns:claseSubtema" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseSubtema">
+<xs:sequence>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverObjetivoPA">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverObjetivoPAResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePAObjetivos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePAObjetivos">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverDatosGenerales">
+<xs:sequence>
+<xs:element name="codigoEscuela" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoAsignatura" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverDatosGeneralesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePADatosGenerales" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePADatosGenerales">
+<xs:sequence>
+<xs:element name="asignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="campoFormacion" type="xs:string" minOccurs="0"/>
+<xs:element name="carrera" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoEscuela" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoMateria" type="xs:string" minOccurs="0"/>
+<xs:element name="correquisitos" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="escuela" type="xs:string" minOccurs="0"/>
+<xs:element name="facultad" type="xs:string" minOccurs="0"/>
+<xs:element name="modalidad" type="xs:string" minOccurs="0"/>
+<xs:element name="nivel" type="xs:string" minOccurs="0"/>
+<xs:element name="prerequisitos" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="sede" type="xs:string" minOccurs="0"/>
+<xs:element name="nCreditos" type="xs:float" minOccurs="0"/>
+<xs:element name="nHorasSemanal" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarProcedimientos">
+<xs:sequence>
+<xs:element name="strListProc" type="xs:string" minOccurs="0"/>
+<xs:element name="strCodPrograma" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarProcedimientosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverObservacion">
+<xs:sequence>
+<xs:element name="codPrograma" type="xs:string" minOccurs="0"/>
+<xs:element name="codSeccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverObservacionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePAObservaciones" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePAObservaciones">
+<xs:sequence>
+<xs:element name="objlista" type="tns:clasePAObservacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePAObservacion">
+<xs:sequence>
+<xs:element name="codObservacion" type="xs:int" minOccurs="0"/>
+<xs:element name="codSeccion" type="xs:int" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="textObservacion" type="xs:string" minOccurs="0"/>
+<xs:element name="codprogranalitico" type="xs:int" minOccurs="0"/>
+<xs:element name="fecha_hora" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarObjetivo">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="objetivo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarObjetivoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverPeriodoActual">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverPeriodoActualResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Periodo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursosTotales">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursosTotalesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePARecursos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lLoadUnidadesAcademicas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lLoadUnidadesAcademicasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverProcedimientosPA">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lDevolverProcedimientosPAResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePAProcedimientoE" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePAProcedimientoE">
+<xs:sequence>
+<xs:element name="intCodigoP" type="xs:int" minOccurs="0"/>
+<xs:element name="intCodigoPrograma" type="xs:int" minOccurs="0"/>
+<xs:element name="strDescripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursosTotalesAsHTML">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lPADevolverRecursosTotalesAsHTMLResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMenuProgramaAnaliticoGestion">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMenuProgramaAnaliticoGestionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverFacultades">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="lDevolverFacultadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:claseFacultad" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseFacultad">
+<xs:sequence>
+<xs:element name="codFacultad" type="xs:string" minOccurs="0"/>
+<xs:element name="escuelas" type="tns:claseEscuela" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseEscuela">
+<xs:sequence>
+<xs:element name="carreras" type="tns:claseCarrera" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="codEscuela" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="claseCarrera">
+<xs:sequence>
+<xs:element name="codCarrera" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverAyuda">
+<xs:sequence>
+<xs:element name="strSeccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverAyudaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMenuProgramaAnalitico">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMenuProgramaAnaliticoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAUpdateRecursos">
+<xs:sequence>
+<xs:element name="objListaRecursos" type="tns:clasePARecursos" minOccurs="0"/>
+<xs:element name="strCodPrograma" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAUpdateRecursosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAActualizarPerfilDocente">
+<xs:sequence>
+<xs:element name="codigoAsignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="campoAmplio" type="xs:string" minOccurs="0"/>
+<xs:element name="campoEspecifico" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAActualizarPerfilDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMetodologia">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverMetodologiaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:clasePAMetodologia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasePAMetodologia">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lLoadUnidadesAcademicasDocente">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lLoadUnidadesAcademicasDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarMetodologia">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="metodologia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lGuardarMetodologiaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAUpdateCaracterizacion">
+<xs:sequence>
+<xs:element name="contenidos" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPAUpdateCaracterizacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADatosGenerales">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lPADatosGeneralesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ArrayOfMateria_Pensum" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverEscuelasFacultad">
+<xs:sequence>
+<xs:element name="codigoFacultad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDevolverEscuelasFacultadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:claseEscuela" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
