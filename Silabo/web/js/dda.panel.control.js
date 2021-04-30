@@ -33,6 +33,9 @@ function pcDibujar(reporte) {
 function _pcDibujarElementos() {
     // NO loading....
     var contenidoDinamico = $("#contenidoDinamico").html("");
+    var dda_titulo_grafico = $("<header>").addClass("text-small-caps").appendTo(contenidoDinamico);
+    dda_titulo_grafico.attr("id", "tituloestado"); 
+    dda_titulo_grafico.text("ESTADO DE LOS SÍLABOS"); 
     var dda_pc = $("<article>").addClass("dda-pc").appendTo(contenidoDinamico);
     var dda_pc_fila = "";
 
