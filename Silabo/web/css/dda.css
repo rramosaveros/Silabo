@@ -383,6 +383,17 @@ main {
     display: inline-block;
 }
 
+#tituloestado {
+    font-weight: 600;
+    color: rgb(0,65,127);
+
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    vertical-align: middle;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
 #subtitulo {
     font-weight: 400;
     color: rgb(0,65,127);
